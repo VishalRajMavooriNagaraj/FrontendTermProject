@@ -1,0 +1,72 @@
+<!-- Vishal Raj Mavoori Nagaraj, 6th August, 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dope</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" width="272" height="78"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service Description</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>  
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-- About us content-->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the worlds largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, magna sit amet tincidunt fringilla, est ligula elementum quam, at blandit odio velit ut dolor. Aliquam faucibus rutrum nulla. Etiam condimentum est vitae condimentum fringilla. Nunc viverra hendrerit sem, a congue arcu tincidunt at. Etiam ullamcorper, nulla sit amet ornare malesuada, neque magna placerat ipsum, et aliquet est odio vel turpis. Phasellus dapibus ex ac fringilla finibus. Morbi et dignissim ligula. Aenean ullamcorper tellus odio, in vulputate felis rutrum ac. Sed vel elit ipsum. Donec ligula ante, maximus eu sagittis ac, sodales in justo. Suspendisse sit amet eros vel nunc faucibus scelerisque.
+          </p>
+          <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg">
+        </div>
+      </div>
+    </section>
+<!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </section>
+
+<!-- JavaScript for menu -->
+    <script>
+      var navLinks=document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right="0";
+      }
+      function hideMenu(){
+        navLinks.style.right="-200px";
+      }
+    </script>
+</body>
+</html>
